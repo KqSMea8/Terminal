@@ -1,0 +1,26 @@
+iapt-get update && 
+sudo apt-get -y install  unzip \
+xz-utils \
+curl \
+bc \
+git \
+build-essential \
+cpio \
+gcc libc6 libc6-dev \
+kmod \
+squashfs-tools \
+genisoimage \
+xorriso \
+syslinux \
+isolinux \
+automake \
+pkg-config \
+p7zip-full
+			
+			E9A33FE7
+			apt-get install gnupg-agent snap-confine
+			gpg --export-secret-key EE9B672E 4C902895 25E4BCB7 B21539D1 > private.key
+			gpg --export EE9B672E 4C902895 25E4BCB7 B21539D1  >> private.key
+
+			gpg --export EE9B672E > public.key
+			gpg --export-secret-subkeys 0C6C94A8 > signing.key		
